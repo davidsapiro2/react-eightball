@@ -21,10 +21,17 @@ function EightBall({ answers = defaultAnswers }) {
 
         setEightBall(answers[randNum]);
     }
+
+    function handleReset() {
+        setEightBall({ msg: "Think of a question", color: "black" });
+    }
     //class name should be the component name-- same with css file name
     return (
+        <div>
         <div style={{ backgroundColor: `${eightBall.color}` }} className='eightBall' onClick={handleClick}>
             <h1 style={{ color: `white` }}> {eightBall.msg}</h1>
+        </div>
+            <button onClick={handleReset}>Reset</button>
         </div>
     );
 }
