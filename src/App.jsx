@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import EightBall from './EightBall';
 
 
@@ -7,14 +6,15 @@ import EightBall from './EightBall';
  * Props: none
  * State: none
  *
+ * App -> EightBall
 */
 
 function App() {
   return (
-  <div>
-    <EightBall />
-  </div>
-  )
+    <div>
+      <EightBall />
+    </div>
+  );
 };
 
 export default App;
